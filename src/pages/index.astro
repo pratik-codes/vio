@@ -1,0 +1,23 @@
+---
+import About from '../components/home/About.astro';
+import Cta from '../components/home/Cta.astro';
+import Expertise from '../components/home/Expertise.astro';
+import Hero from '../components/home/Hero.astro';
+import Services from '../components/home/Services.astro';
+import Testimonials from '../components/home/Testimonials.astro';
+import Layout from '../layouts/Layout.astro';
+import Team from '../components/about/Team.astro';
+---
+
+<Layout
+  description="At VIO, we stand as your trusted legal partner, dedicated to delivering personalized solutions tailored to your unique needs. With a commitment to excellence, we navigate the legal landscape with expertise and care, ensuring your success at every turn. Discover how we can support your journey forward. Let's embark on your legal endeavors together."
+  title="Venture Investment Opportunities Ltd"
+>
+  <Hero />
+  <Services />
+  <Expertise />
+  <About />
+  <!-- <Testimonials /> -->
+  <Team />
+  <Cta />
+</Layout>

@@ -1,0 +1,89 @@
+---
+const stats = [
+  {
+    name: 'Years',
+    value: '9',
+  },
+  {
+    name: 'Experts',
+    value: '15',
+  },
+  {
+    name: 'Projects',
+    value: '122',
+  },
+  {
+    name: 'Awards',
+    value: "'9'",
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <img
+        class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+        width="576"
+        height="864"
+        src="/assets/about.webp"
+        alt="Our experts working together"
+      />
+      <div class="flex flex-col gap-10">
+        <!-- Mission description -->
+        <div class="space-y-8 sm:space-y-12">
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
+          <div class="space-y-6">
+            <p
+              class="text-primary-950/70 dark:text-primary-200/70 mx-auto max-w-xl text-lg sm:text-xl"
+            >
+              At Venture Investment Opportunities Ltd, our mission is to provide comprehensive legal
+              guidance and support to businesses and individuals at every stage of their journey. We
+              believe in fostering strong, enduring relationships with our clients, built on trust,
+              understanding, and a commitment to their success.
+
+              <br />
+              <br />
+               Our approach is characterized by its freshness, commercial acumen, and proactive
+              stance. We strive to achieve optimal results efficiently and promptly, ensuring our
+              clients' objectives are met with precision and timeliness.
+
+              <br />
+              <br />
+               With a focus on international business, we specialize in assisting clients in
+              launching their ventures in the UK and Europe, facilitating smooth entry into new
+              markets. As a trusted partner of London & Partners and a Network Member of the
+              Department of International Trade, we are dedicated to simplifying the complexities of
+              inward investment and promoting business growth.
+
+              <br />
+              <br />
+               Furthermore, we offer an integrated, one-stop solution by collaborating with top
+              professional service providers, including accountants, tax advisors, and payroll
+              specialists. This comprehensive approach allows us to tailor our services precisely to
+              our clients' needs, providing seamless support for their entry into the UK market.
+
+              <br />
+              <br />
+               If you're seeking a law firm that combines expertise with a client-centered approach
+              and a dedication to excellence, we invite you to reach out and discover how we can
+              support your legal needs and business ambitions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {
+            stats.map((stat) => (
+              <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
+                <dt class="text-base">{stat.name}</dt>
+                <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
